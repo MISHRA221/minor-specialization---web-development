@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head><title>tabs</title>
+</head>
+<body>
+<p>enter the 1st no.<br>
+<input type="text" id="txt1"><br><br>
+enter the 2nd no.<br>
+<input type="text" id="txt2"><br>
+<p>ans:</p>
+<input type="text" id="txtsum"><br>
+<input type="text" id="txtm"><br>
+<input type="text" id="txtd"><br>
+<input type="text" id="txtsub"><br>
+<input type="button" id="btn1" name="button1" onclick="algebra()">
+addition</button>
+<input type="button" id="btn2" name="button2" onclick="multi()">
+multipication</button>
+<input type="button" id="btn3" name="button3" onclick="division()">
+division</button>
+<input type="button" id="btn4" name="button" onclick="subtraction()">
+subtraction</button>
+<script>
+function algebra(){
+var n1=parseInt(document.getElementById("txt1").value);
+var n2=parseInt(document.getElementById("txt2").value);
+ var sum=n1+n2;
+document.getElementById("txtsum").value=sum;
+}
+function multi(){
+var n1=parseInt(document.getElementById("txt1").value);
+var n2=parseInt(document.getElementById("txt2").value);
+ var m=n1*n2;
+document.getElementById("txtm").value=m;
+}
+function division(){
+var n1=parseInt(document.getElementById("txt1").value);
+var n2=parseInt(document.getElementById("txt2").value);
+ var d=n1/n2;
+document.getElementById("txtd").value=d;
+}
+function subtraction(){
+var n1=parseInt(document.getElementById("txt1").value);
+var n2=parseInt(document.getElementById("txt2").value);
+ var b=n1-n2;
+document.getElementById("txtsub").value=b;
+}
+</script></body>
+</html>
